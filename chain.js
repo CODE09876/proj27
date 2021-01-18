@@ -1,12 +1,12 @@
 class Chain {
-    constructor(bodyA,bodyB,offsetX,offsetY){
+    constructor(bodyA,pointB,offsetX,offsetY){
 
         this.offsetX = offsetX
         this.offsetY = offsetY
 
         var options = {
             bodyA:bodyA,
-            bodyB:bodyB,
+            pointB:pointB,
             pointB:{x:this.offsetX, y:this.offsetY}
         }
         this.chain = Constraint.create(options);
@@ -15,7 +15,7 @@ class Chain {
 
     display(){
         var pointA = this.chain.bodyA.position;
-        var pointB = this.chain.bodyB.position;
+        var pointB = this.pointB;
         strokeWeight(4);
         line(pointA.x,pointA.y,pointB.x,pointB.y);        
     }
