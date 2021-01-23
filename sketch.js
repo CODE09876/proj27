@@ -22,7 +22,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	roof = new Roof(600,150,300,20);
+	roof = new Roof(600,150,500,20);
 
 	ball1 = new Ball(600,350,50);
 	ball2 = new Ball(500,350,50);
