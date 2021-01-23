@@ -30,11 +30,11 @@ function setup() {
 	ball4 = new Ball(400,350,50);
 	ball5 = new Ball(800,350,50);
 
-	chain1 = new Chain(roof.body,ball1.body,-50*2,0);
-	chain2 = new Chain(roof.body,ball2.body,-50*2,0);
-	chain3 = new Chain(roof.body,ball3.body,-50*2,0);
-	chain4 = new Chain(roof.body,ball4.body,-50*2,0);
-	chain5 = new Chain(roof.body,ball5.body,-50*2,0);
+	chain1 = new Chain(ball1.body,150,-50*2,0);
+	chain2 = new Chain(ball2.body,500,-50*2,0);
+	chain3 = new Chain(ball3.body,700,-50*2,0);
+	chain4 = new Chain(ball4.body,400,-50*2,0);
+	chain5 = new Chain(ball5.body,800,-50*2,0);
 
 
 
